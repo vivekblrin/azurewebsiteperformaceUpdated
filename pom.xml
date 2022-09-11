@@ -49,18 +49,6 @@
                         <artifact>kg.apc:jmeter-plugins-manager:0.20</artifact>
                     </jmeterExtensions>
                     <downloadExtensionDependencies>false</downloadExtensionDependencies>
-<!--                      <excludedArtifacts>
-                            <exclusion>org.apache.commons:commons-pool2</exclusion>
-                            <exclusion>org.apache.commons:commons-math3</exclusion>
-                            <exclusion>org.slf4j:slf4j-nop</exclusion>
-                            <exclusion>logkit:logkit</exclusion>
-                            <exclusion>avalon-logkit:avalon-logkit</exclusion>
-                            <exclusion>jdom:jdom</exclusion>
-                            <exclusion>log4j:log4j</exclusion>
-                            <exclusion>commons-logging:commons-logging</exclusion>
-                            <exclusion>excalibur-logger:excalibur-logger</exclusion>
-                            <exclusion>org.apache.jmeter:jorphan</exclusion>
-                      </excludedArtifacts>  -->
                       <overrideRootLogLevel>info</overrideRootLogLevel>                   
                 </configuration>
                 <executions>              
