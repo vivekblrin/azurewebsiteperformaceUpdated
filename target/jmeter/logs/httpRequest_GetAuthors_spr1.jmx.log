@@ -1,0 +1,83 @@
+2022/09/11 23:43:20 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: Loading user properties from: D:\mindtickleIntvWS\azurewebsiteperformaceUpdated\target\jmeter\bin\user.properties 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: Loading system properties from: D:\mindtickleIntvWS\azurewebsiteperformaceUpdated\target\jmeter\bin\system.properties 
+2022/09/11 23:43:21 WARN  - jmeter.JMeter: LogLevel: INFO 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: Version 3.0 r1743807 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: java.version=1.8.0_331 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) Client VM 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: os.name=Windows 10 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: os.arch=x86 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: os.version=10.0 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: file.encoding=Cp1252 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: Max memory     =518979584 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: Available Processors =4 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: JMeterHome=D:\mindtickleIntvWS\azurewebsiteperformaceUpdated\target\jmeter 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: user.dir  =D:\mindtickleIntvWS\azurewebsiteperformaceUpdated\target\jmeter\bin 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: PWD       =D:\mindtickleIntvWS\azurewebsiteperformaceUpdated\target\jmeter\bin 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: IP: 192.168.1.41 Name: DESKTOP-EUDIV0F FullName: 192.168.1.41 
+2022/09/11 23:43:21 INFO  - jmeter.services.FileServer: Default base='D:\mindtickleIntvWS\azurewebsiteperformaceUpdated\target\jmeter\bin' 
+2022/09/11 23:43:21 INFO  - jmeter.services.FileServer: Set new base='D:\mindtickleIntvWS\azurewebsiteperformaceUpdated\target\jmeter\testFiles' 
+2022/09/11 23:43:21 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2022/09/11 23:43:21 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2022/09/11 23:43:21 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.9 
+2022/09/11 23:43:21 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2022/09/11 23:43:21 INFO  - jmeter.save.SaveService: Loading file: D:\mindtickleIntvWS\azurewebsiteperformaceUpdated\target\jmeter\testFiles\httpRequest_GetAuthors_spr1.jmx 
+2022/09/11 23:43:21 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2022/09/11 23:43:21 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2022/09/11 23:43:21 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2022/09/11 23:43:21 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2022/09/11 23:43:21 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2022/09/11 23:43:21 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: Creating summariser <summary> 
+2022/09/11 23:43:21 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2022/09/11 23:43:21 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2022/09/11 23:43:21 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2022/09/11 23:43:21 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2022/09/11 23:43:21 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2022/09/11 23:43:21 INFO  - jmeter.JMeter: Running test (1662920001798) 
+2022/09/11 23:43:21 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : jp@gc_sth_httpRequest_GetAuthors_spr1 
+2022/09/11 23:43:21 INFO  - jmeter.engine.StandardJMeterEngine: Starting 5 threads for group jp@gc_sth_httpRequest_GetAuthors_spr1. 
+2022/09/11 23:43:21 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2022/09/11 23:43:21 INFO  - kg.apc.jmeter.threads.AbstractSimpleThreadGroup: Starting thread group number 1 threads 5 
+2022/09/11 23:43:21 INFO  - kg.apc.jmeter.threads.AbstractSimpleThreadGroup: Started thread group number 1 
+2022/09/11 23:43:21 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2022/09/11 23:43:21 INFO  - jmeter.threads.JMeterThread: Thread started: jp@gc_sth_httpRequest_GetAuthors_spr1 1-1 
+2022/09/11 23:43:21 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = DESKTOP-EUDIV0F 
+2022/09/11 23:43:21 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
+2022/09/11 23:43:21 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2022/09/11 23:43:21 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2022/09/11 23:43:21 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2022/09/11 23:43:21 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2022/09/11 23:43:22 INFO  - jmeter.protocol.http.sampler.LazySchemeSocketFactory: Setting up HTTPS TrustAll Socket Factory 
+2022/09/11 23:43:22 INFO  - jmeter.util.JsseSSLManager: Using default SSL protocol: TLS 
+2022/09/11 23:43:22 INFO  - jmeter.util.JsseSSLManager: SSL session context: per-thread 
+2022/09/11 23:43:22 INFO  - jmeter.threads.JMeterThread: Thread started: jp@gc_sth_httpRequest_GetAuthors_spr1 1-2 
+2022/09/11 23:43:23 INFO  - jmeter.util.SSLManager: JmeterKeyStore Location:  type JKS 
+2022/09/11 23:43:23 INFO  - jmeter.util.SSLManager: KeyStore created OK 
+2022/09/11 23:43:23 WARN  - jmeter.util.SSLManager: Keystore file not found, loading empty keystore 
+2022/09/11 23:43:23 INFO  - jmeter.threads.JMeterThread: Thread started: jp@gc_sth_httpRequest_GetAuthors_spr1 1-3 
+2022/09/11 23:43:24 INFO  - jmeter.threads.JMeterThread: Thread started: jp@gc_sth_httpRequest_GetAuthors_spr1 1-4 
+2022/09/11 23:43:25 INFO  - jmeter.threads.JMeterThread: Thread started: jp@gc_sth_httpRequest_GetAuthors_spr1 1-5 
+2022/09/11 23:43:27 INFO  - jmeter.threads.JMeterThread: Stopping because end time detected by thread: jp@gc_sth_httpRequest_GetAuthors_spr1 1-2 
+2022/09/11 23:43:27 INFO  - jmeter.threads.JMeterThread: Thread finished: jp@gc_sth_httpRequest_GetAuthors_spr1 1-2 
+2022/09/11 23:43:27 INFO  - jmeter.threads.JMeterThread: Stopping because end time detected by thread: jp@gc_sth_httpRequest_GetAuthors_spr1 1-3 
+2022/09/11 23:43:27 INFO  - jmeter.threads.JMeterThread: Stopping because end time detected by thread: jp@gc_sth_httpRequest_GetAuthors_spr1 1-5 
+2022/09/11 23:43:27 INFO  - jmeter.threads.JMeterThread: Thread finished: jp@gc_sth_httpRequest_GetAuthors_spr1 1-3 
+2022/09/11 23:43:27 INFO  - jmeter.threads.JMeterThread: Thread finished: jp@gc_sth_httpRequest_GetAuthors_spr1 1-5 
+2022/09/11 23:43:28 INFO  - jmeter.threads.JMeterThread: Stopping because end time detected by thread: jp@gc_sth_httpRequest_GetAuthors_spr1 1-1 
+2022/09/11 23:43:28 INFO  - jmeter.threads.JMeterThread: Thread finished: jp@gc_sth_httpRequest_GetAuthors_spr1 1-1 
+2022/09/11 23:43:28 INFO  - jmeter.threads.JMeterThread: Stopping because end time detected by thread: jp@gc_sth_httpRequest_GetAuthors_spr1 1-4 
+2022/09/11 23:43:28 INFO  - jmeter.threads.JMeterThread: Thread finished: jp@gc_sth_httpRequest_GetAuthors_spr1 1-4 
+2022/09/11 23:43:28 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2022/09/11 23:43:28 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.NoSuchMethodError: org.apache.jorphan.util.JOrphanUtils.formatDuration(J)Ljava/lang/String;
+	at org.apache.jmeter.reporters.Summariser.format(Summariser.java:242)
+	at org.apache.jmeter.reporters.Summariser.testEnded(Summariser.java:359)
+	at org.apache.jmeter.reporters.ResultCollector.testEnded(ResultCollector.java:313)
+	at org.apache.jmeter.reporters.ResultCollector.testEnded(ResultCollector.java:343)
+	at org.apache.jmeter.engine.StandardJMeterEngine.notifyTestListenersOfEnd(StandardJMeterEngine.java:215)
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:436)
+	at java.lang.Thread.run(Thread.java:750)
+

@@ -1,0 +1,124 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.azurewebsites.net</groupId>
+  <artifactId>azurewebsites.net.performace</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>azurewebsitesperformaceUpdated</name>
+  <description>azurewebsitesperformaceUpdated</description>
+  
+  <properties>
+      <java.version>1.8</java.version>
+      <basedir>${project.basedir}</basedir>
+  </properties>
+    
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            
+            <plugin>
+                <groupId>com.lazerycode.jmeter</groupId>
+                <artifactId>jmeter-maven-plugin</artifactId>
+                <version>2.0.3</version>
+                <configuration>
+                    <testResultsTimestamp>false</testResultsTimestamp>
+                    <propertiesUser>
+                        <threadgroup.count>2</threadgroup.count>
+                        <threadgroup.rampup>2</threadgroup.rampup>
+                        <threadgroup.duration>5</threadgroup.duration>
+                        <jmeter.save.saveservice.output_format>csv</jmeter.save.saveservice.output_format>
+                        <jmeter.save.saveservice.bytes>true</jmeter.save.saveservice.bytes>
+                        <jmeter.save.saveservice.label>true</jmeter.save.saveservice.label>
+                        <jmeter.save.saveservice.latency>true</jmeter.save.saveservice.latency>
+                        <jmeter.save.saveservice.response_code>true</jmeter.save.saveservice.response_code>
+                        <jmeter.save.saveservice.response_message>true</jmeter.save.saveservice.response_message>
+                        <jmeter.save.saveservice.successful>true</jmeter.save.saveservice.successful>
+                        <jmeter.save.saveservice.thread_counts>true</jmeter.save.saveservice.thread_counts>
+                        <jmeter.save.saveservice.thread_name>true</jmeter.save.saveservice.thread_name>
+                        <jmeter.save.saveservice.time>true</jmeter.save.saveservice.time>
+                    </propertiesUser>
+                    <jmeterExtensions>
+                        <artifact>kg.apc:jmeter-plugins-casutg:2.0</artifact>
+                        <artifact>kg.apc:jmeter-plugins-cmn-jmeter:0.4</artifact>
+                        <artifact>kg.apc:jmeter-plugins-manager:0.20</artifact>
+                    </jmeterExtensions>
+                    <downloadExtensionDependencies>false</downloadExtensionDependencies>
+<!--                      <excludedArtifacts>
+                            <exclusion>org.apache.commons:commons-pool2</exclusion>
+                            <exclusion>org.apache.commons:commons-math3</exclusion>
+                            <exclusion>org.slf4j:slf4j-nop</exclusion>
+                            <exclusion>logkit:logkit</exclusion>
+                            <exclusion>avalon-logkit:avalon-logkit</exclusion>
+                            <exclusion>jdom:jdom</exclusion>
+                            <exclusion>log4j:log4j</exclusion>
+                            <exclusion>commons-logging:commons-logging</exclusion>
+                            <exclusion>excalibur-logger:excalibur-logger</exclusion>
+                            <exclusion>org.apache.jmeter:jorphan</exclusion>
+                      </excludedArtifacts>  -->
+                      <overrideRootLogLevel>info</overrideRootLogLevel>                   
+                </configuration>
+                <executions>              
+                       <execution>
+                            <id>configuration</id>
+                            <goals>
+                                <goal>configure</goal>
+                            </goals>
+                             <configuration>
+                                 <copy file="${basedir}/src/test/resources/reportgenerator.properties" 
+									  tofile="${basedir}/target/jmeter/bin/reportgenerator.properties" />                            
+                             </configuration>
+                        </execution>
+                    <execution>
+                        <id>jmeter-tests</id>                    
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jmeter</goal>
+                        </goals>
+                    </execution>
+		              <execution>
+		                    <id>check-results</id>
+		                    <goals>
+		                        <goal>results</goal>
+		                    </goals>  		                    
+		              </execution>                   
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>              		              
+                    <execution>
+                        <phase>pre-site</phase>
+                        <configuration>    
+                            <tasks>
+                                <mkdir dir="${basedir}/target/jmeter/results/dashboard" />
+                                <delete file="${basedir}/target/jmeter/lib/jorphan-2.13.jar"/>
+                                <delete file="${basedir}/target/jmeter/lib/log4j-slf4j-impl-2.8.2.jar"/>
+                                <copy file="${basedir}/src/test/resources/reportgenerator.properties" 
+									  tofile="${basedir}/target/jmeter/bin/reportgenerator.properties" />
+                                <copy todir="${basedir}/target/jmeter/bin/report-template">
+                                    <fileset dir="${basedir}/src/test/resources/report-template" />
+                                </copy>
+                                 <java jar="${basedir}/target/jmeter/bin/ApacheJMeter-3.0.jar" fork="true">
+                                    <arg value="-g" />
+                                    <arg value="${basedir}/target/jmeter/results/*.jtl" />
+                                    <arg value="-o" />
+                                    <arg value="${basedir}/target/jmeter/results/dashboard/" />
+                                </java>  
+                            </tasks>                                                   
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>       
+        </plugins>
+    </build>
+    
+</project>

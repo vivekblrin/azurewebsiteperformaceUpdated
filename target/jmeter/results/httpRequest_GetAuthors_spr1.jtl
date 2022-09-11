@@ -1,0 +1,12 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,grpThreads,allThreads,Latency,IdleTime
+1662920003886,1481,httpRequest_GetAuthors_spr1,200,OK,jp@gc_sth_httpRequest_GetAuthors_spr1 1-3,text,true,,3461,4,4,1164,0
+1662920005369,497,httpRequest_GetAuthors_spr1,200,OK,jp@gc_sth_httpRequest_GetAuthors_spr1 1-3,text,true,,3461,5,5,297,0
+1662920002817,3262,httpRequest_GetAuthors_spr1,200,OK,jp@gc_sth_httpRequest_GetAuthors_spr1 1-2,text,true,,3454,5,5,2045,0
+1662920004821,1460,httpRequest_GetAuthors_spr1,200,OK,jp@gc_sth_httpRequest_GetAuthors_spr1 1-4,text,true,,3461,5,5,1251,0
+1662920006081,508,httpRequest_GetAuthors_spr1,200,OK,jp@gc_sth_httpRequest_GetAuthors_spr1 1-2,text,true,,3461,5,5,201,0
+1662920006283,510,httpRequest_GetAuthors_spr1,200,OK,jp@gc_sth_httpRequest_GetAuthors_spr1 1-4,text,true,,3461,5,5,305,0
+1662920006589,513,httpRequest_GetAuthors_spr1,200,OK,jp@gc_sth_httpRequest_GetAuthors_spr1 1-2,text,true,,3461,5,5,205,0
+1662920005866,1542,httpRequest_GetAuthors_spr1,200,OK,jp@gc_sth_httpRequest_GetAuthors_spr1 1-3,text,true,,3454,4,4,192,0
+1662920005821,1586,httpRequest_GetAuthors_spr1,200,OK,jp@gc_sth_httpRequest_GetAuthors_spr1 1-5,text,true,,3461,4,4,1280,0
+1662920001892,6389,httpRequest_GetAuthors_spr1,200,OK,jp@gc_sth_httpRequest_GetAuthors_spr1 1-1,text,true,,3454,2,2,4904,0
+1662920006794,1738,httpRequest_GetAuthors_spr1,200,OK,jp@gc_sth_httpRequest_GetAuthors_spr1 1-4,text,true,,3454,1,1,304,0
