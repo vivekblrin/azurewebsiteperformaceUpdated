@@ -1,6 +1,6 @@
 
 The project uses jmeter plugin and Jmter test file .jmx and geneate  test covreage output as html reports.
-The user only needs to generate the test design file .jmx file using generate and it can genearate performace test and other reports.
+The user only needs to generate the test design file .jmx file using jmeter and it can genearate performace test and other reports.
 
 =============================================================
 
