@@ -3,7 +3,8 @@ The project uses jmeter plugin and Jmter test file .jmx and geneate  test covrea
 The user only needs to generate the test design file .jmx file using generate and it can genearate performace test and other reports.
 
 =============================================================
-swagger api to test : - https://fakerestapi.azurewebsites.net/
+swagger api to test : - https://fakerestapi.azurewebsites.net/ 
+
 ============================================================
 Install Java 1.8.0_331
 Intall apache-maven-3.8.6
