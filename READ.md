@@ -1,4 +1,4 @@
-urls to test :- https://petstore.swagger.io/
+url to test : - https://fakerestapi.azurewebsites.net/
 ============================================================================
 Install Java 1.8.0_331
 Intall apache-maven-3.8.6
