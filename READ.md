@@ -4,7 +4,7 @@ The user only needs to generate the test design file .jmx file using generate an
 
 =============================================================
 swagger api to test : - https://fakerestapi.azurewebsites.net/
-============================================================================
+============================================================
 Install Java 1.8.0_331
 Intall apache-maven-3.8.6
 install Jmeter 3.0
