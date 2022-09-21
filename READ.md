@@ -41,7 +41,7 @@ httpRequest_PutAuthorsById
 httpRequest_deleteAuthorsById.jmx
 
 and copy to 
-to D:\mindtickleIntvWS\azurewebsiteperformaceUpdated\src\test\jmeter folder
+to D:\azurewebsiteperformaceUpdated\src\test\jmeter folder
 
 ============================================================================
 
@@ -52,11 +52,12 @@ then
 run command "mvn pre-site"
 
 will generate report in
-D:\mindtickleIntvWS\azurewebsiteperformaceUpdated\target\jmeter\results\dashboard\index.html
+D:\azurewebsiteperformaceUpdated\target\jmeter\results\dashboard\index.html
+
 ============================================================================ 
 Generate Report via scripts
 alternatively we can run
  
 azurewebsiteperformaceUpdated_build.bat or azurewebsiteperformaceUpdated_build.sh
 will generate report in following folder
-D:\mindtickleIntvWS\azurewebsiteperformaceUpdated\target\jmeter\results\dashboard\index.html
+D:\azurewebsiteperformaceUpdated\target\jmeter\results\dashboard\index.html
